@@ -10,23 +10,24 @@
 </head>
 <body class="bg-verydarkgrayishblue-200">
 
-  <div class="gridLayout grid grid-cols-1 my-20 mx-5 border border-verydarkgrayishblue-200 rounded-b-2xl lg:grid-cols-2 lg:mx-72 lg:mt-48">
+  <div class="gridLayout grid grid-cols-1 my-20 mx-5 rounded-b-2xl md:grid-cols-2 md:mx-20 lg:mt-32 lg:mx-48">
     <!-- Start Image Section  -->
     <div class="imageBox">
-      <img src="images/drawers.jpg" alt="Drawers" class="rounded-t-2xl lg:rounded-tl-2xl lg:rounded-bl-2xl lg:h-full">
+      <img src="images/drawers.jpg" alt="Drawers" class="w-full rounded-t-2xl md:rounded-tl-2xl md:rounded-tr-none md:rounded-bl-2xl md:h-full">
     </div>
     <!-- End Image Section  -->
 
     <!-- Start Information Section  -->
-    <div class="infoBox bg-white-500 lg:rounded-tr-2xl lg:rounded-br-2xl lg:relative">
-      <h2 class="text-xl mx-5 mt-5 mb-3 text-desatureddarkblue-900 lg:font-semibold">Shift the overall look and feel by adding these wonderful 
+    <div class="infoBox bg-white-500 md:rounded-tr-2xl md:rounded-br-2xl md:relative">
+      <div class="lg:mt-20">
+      <h2 class="text-xl mx-5 mt-5 mb-3 text-desatureddarkblue-900 md:font-semibold lg:mt-8">Shift the overall look and feel by adding these wonderful 
         touches to furniture in your home</h2>
-      <p class="text-base mx-5 mb-5 text-grayish-blue-800">Ever been in a room and felt like something was missing? Perhaps 
+      <p class="text-base mx-5 mb-5 text-grayish-blue-800 lg:mt-5">Ever been in a room and felt like something was missing? Perhaps 
         it felt slightly bare and uninviting. I’ve got some simple tips 
         to help you make any room feel complete.
       </p>
 
-      <div id="profile" class="photoBox grid grid-cols-3 pb-5 rounded-b-2x1">
+      <div id="profile" class="photoBox grid grid-cols-3 pb-5 rounded-b-2x1 ">
         <img src="images/avatar-michelle.jpg" alt="Michelle" class="h-14 rounded-full mx-5">
         <ul class="mt-2">
           <li><h3 class="text-sm font-semibold w-32">Michelle Appleton</h3></li>
@@ -34,9 +35,10 @@
         </ul>
         <img src="images/icon-share.svg" alt="Share" class="ml-8 my-auto cursor-pointer h-5" onclick="showShareBox()">
       </div>
+      </div>
 
       <!-- Start Share Section Mobile -->
-      <div id="share" class="shareSection grid grid-cols-3 bg-verydarkgrayishblue-500 rounded-b-2xl lg:rounded-2xl lg:absolute lg:top-36 lg:left-32 hidden">
+      <div id="share" class="shareSection grid grid-cols-3 bg-verydarkgrayishblue-500 rounded-b-2xl lg:rounded-2xl md:absolute lg:top-36 lg:left-32 hidden">
         <h2 class="my-5 mx-5 uppercase tracking-widest text-md text-grayish-blue-500">Share</h2>
         <ul class="flex gap-x-5 text-white-100 text-xl my-auto">
           <li><a href="https://facebook.com/" target="_blank" class="hover:text-verydarkgrayishblue-900"><i class="fab fa-facebook-square"></i></a></li>
