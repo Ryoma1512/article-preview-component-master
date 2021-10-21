@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Article preview component</title>
+  <link rel="stylesheet" href="css/all.min.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="bg-verydarkgrayishblue-200">
+
+  <div class="gridLayout grid grid-cols-1 my-20 mx-5 border border-verydarkgrayishblue-200 rounded-b-2xl lg:grid-cols-2 lg:mx-72 lg:mt-48">
+    <!-- Start Image Section  -->
+    <div class="imageBox">
+      <img src="images/drawers.jpg" alt="Drawers" class="mx-5 rounded-t-2xl lg:rounded-tl-2xl lg:rounded-bl-2xl lg:h-full">
+    </div>
+    <!-- End Image Section  -->
+
+    <!-- Start Information Section  -->
+    <div class="infoBox bg-white-500 lg:rounded-tr-2xl lg:rounded-br-2xl lg:relative">
+      <h2 class="text-xl mx-5 mt-5 mb-3 text-desatureddarkblue-900 lg:font-semibold">Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home</h2>
+      <p class="text-base mx-5 mb-5 text-grayish-blue-800">Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.
+      </p>
+
+      <div id="profile" class="photoBox grid grid-cols-3 pb-5 rounded-b-2x1">
+        <img src="images/avatar-michelle.jpg" alt="Michelle" class="h-14 rounded-full mx-5">
+        <ul class="mt-2">
+          <li><h3 class="text-sm font-semibold w-32">Michelle Appleton</h3></li>
+          <li><span class="text-sm text-grayish-blue-800">28 Jun 2020</span></li>
+        </ul>
+        <img src="images/icon-share.svg" alt="Share" class="ml-8 my-auto cursor-pointer h-5" onclick="showShareBox()">
+      </div>
+
+      <!-- Start Share Section Mobile -->
+      <div id="share" class="shareSection grid grid-cols-3 bg-verydarkgrayishblue-500 rounded-b-2xl lg:rounded-2xl lg:absolute lg:top-36 lg:left-32 hidden">
+        <h2 class="my-5 mx-5 uppercase tracking-widest text-md text-grayish-blue-500">Share</h2>
+        <ul class="flex gap-x-5 text-white-100 text-xl my-auto">
+          <li><a href="https://facebook.com/" target="_blank" class="hover:text-verydarkgrayishblue-900"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="https://twitter.com/" target="_blank" class="hover:text-verydarkgrayishblue-900"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://pinterest.com/" target="_blank" class="hover:text-verydarkgrayishblue-900"><i class="fab fa-pinterest"></i></a></li>
+        </ul>
+        <img src="images/icon-share.svg" alt="Share" class="ml-8 my-auto cursor-pointer h-5" onclick="hiddenShowBox()">
+      </div>
+      <!-- End Share Section Mobile  -->
+
+    </div>
+    <!-- End Information Section  -->
+  </div>
+  
+  <footer class="text-center mx-5 font-semibold">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="font-bold hover:underline">Frontend Mentor</a>. 
+    Coded by <a href="#" class="font-bold hover:underline">Mario Hernández</a>.
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
