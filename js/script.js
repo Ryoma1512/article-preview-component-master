@@ -1,8 +1,7 @@
-
 if (innerWidth <= 768){
     function showShareBox(){
-        document.getElementById("share").style.display = "grid";
         document.getElementById("profile").style.display = "none";        
+        document.getElementById("share").style.display = "grid";
     }
 
     function hiddenShowBox(){
@@ -11,15 +10,15 @@ if (innerWidth <= 768){
     }
 
     
-}
-else{
+};
+if (innerWidth >= 769) {
     function showShareBox(){
-        document.getElementById("share").style.display = "grid";
-        document.getElementById("profile").style.display = "grid";        
+        document.getElementById("profile").style.display = "grid"; 
+        document.getElementById("share").style.display = "grid";       
     }
 
     function hiddenShowBox(){
-        document.getElementById("share").style.display = "none";
         document.getElementById("profile").style.display = "grid";
+        document.getElementById("share").style.display = "none";
     }
-}
+};
